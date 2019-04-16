@@ -4,33 +4,50 @@
 
 .header{
     background-color: #ffffff;
-    border: 2px #cccccc;
     display: block;
-    height: 100px;
     width: 100%;
-    
+    position: absolute;
+    top: 0;
+    left: 0;  
+    border-bottom: solid 1px #ccc;  
 }
-body{
-    margin: 0 auto; 
-    width: 960px;
 
+body{
+    width: 100%;
+}
+.main{
+    display: block;
+    position: relative;
+    top: 130px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: solid 2px #ccc;
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
 }
 h1{
     background-color: #4aaaa5;
     color: white;
     display: inline-block;
+    position: relative;
+    left: 250px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    padding: 15px 40px;
-    width: 400px;
+    padding: 39px 40px 47px 40px;
+    margin: auto;
 }
 .nav{
     color: #777777;
-    display: inline-block;
-    justify-content: flex-end;
+    float: right;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     padding: 50px;
+    position: relative;
+    right: 150px;
     width: 400px;
     
 }
@@ -42,4 +59,15 @@ a:link, a:visited {
 a:hover {
     color: #4aaaa5;
     text-decoration: none;
+}
+h2{
+    border-bottom: solid 1.5px #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about{
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
 }
