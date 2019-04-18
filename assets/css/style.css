@@ -1,57 +1,49 @@
 *{
     box-sizing: border-box;
 }
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 300px;
+}
 
 .header{
     background-color: #ffffff;
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;  
+    margin: auto;
     border-bottom: solid 1px #ccc;  
 }
 
 body{
     width: 100%;
+    margin: 0;
 }
 .main{
-    position: relative;
-    top: 130px;
+    flex: inherit;
     width: 960px;
-    margin: 0 auto;
+    margin: 100px auto;
     background-color: #ffffff;
     border: solid 2px #ccc;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
-    min-height: calc(100vh-70px);
 }
 
-.clearfix::after{
-    content:"";
-    display: block;
-    clear: both;
-}
 h1{
     background-color: #4aaaa5;
     color: white;
-    display: inline-block;
-    position: relative;
-    left: 250px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 39px 40px 47px 40px;
-    margin: auto;
+    margin: 25px 200px 0 0;
 }
 .nav{
     color: #777777;
-    float: right;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
     padding: 50px;
-    position: relative;
-    right: 150px;
-    width: 400px;
-    
+    margin: 25px;
+  
 }
 a:link, a:visited {
     color: #777777;
@@ -62,14 +54,15 @@ a:hover {
     color: #4aaaa5;
     text-decoration: none;
 }
-h2{
-    border-bottom: solid 1.5px #ccc;
+h2 {
+    border-bottom: solid 2px #ccc;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 20px;
 }
+
 .about{
     margin: 0 auto;
     padding: 0 20px 0 20px;
@@ -80,32 +73,14 @@ h2{
     float: left;
     margin: 20px 20px 20px 0;
 }
-.form{
-    padding: 20px;
-}
-input[type=text]{
-    width: 100%;
-    padding: 8px 15px;
-    margin: 8px 0;
-}
-textarea{
-    width: 100%;
-    height: 200px;
-    padding: 12px 20px;
-    border: solid .5px #777777;
-
-}
 
 .footer{
     background-color: #666666;
-    border-top: solid 2px #4aaaa5;
+    border-top: solid 5px #4aaaa5;
     color: #eee;
-    height: 50px;
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     padding: 15px;
-
 }
