@@ -30,8 +30,9 @@ input[type=submit]{
 .wrapper{
     display: grid;
     width: 960px;
+    grid-column-gap: 55px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 35%;
     margin: 20px;
 }
 .project1{
@@ -63,7 +64,6 @@ input[type=submit]{
     display: flex;
     position: relative;
     bottom: 75px;
-    width: 200px;
 }
 h4{
     margin: 0 auto;
