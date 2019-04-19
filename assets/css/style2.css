@@ -69,3 +69,9 @@ h4{
     margin: 0 auto;
     padding: 20px;
 }
+input[type=submit]:hover{
+    background-color: grey;
+}
+input[type=submit]:active{
+    background-color: coral;
+}
